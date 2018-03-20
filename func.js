@@ -19,7 +19,7 @@ $('#btn').click(function() {
 
             }
     );
-        } else if(data.response.error != null ||typeof $('#cityname').val() == number || data == null) {
+        } else if(data.response.error != null ||typeof $('#cityname').val() == 'number' || data == null) {
             let txt = "<p class=\"winfo\">No cities match your search query</p>"
             $("#weatherarea").append(txt)
         }else {
