@@ -32,7 +32,7 @@ $('#btn').click(function() {
 
 });
 //TO DO: przerobic klik na wyszukane miasto wielokrotne aby obpytywalo api po miescie i state
- //   jQuery(function ($) {
+    jQuery(function ($) {
         $(document).on("click", "a#newsearch", function () {
             $('#weatherarea').empty();
             console.log(jsonData);
@@ -44,7 +44,7 @@ $('#btn').click(function() {
                 console.log(zmcode)
             }
            
-        //   });
+           });
            $.getJSON("https://api.wunderground.com/api/10a334466f8c5e10/geolookup/conditions/forecast/q/zmw:"+zmcode+".json", function(data, status){
             this.data = data;
             console.log(data)
